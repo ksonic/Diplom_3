@@ -1,0 +1,1 @@
+{"uuid":"aafb4146-43b1-48c2-9b94-2e8c41c478aa","name":"Check transition from to sauces section","children":["84bd3348-101b-405b-abd3-a13b4a6b98c6"],"befores":[{"name":"startUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1652619750383,"stop":1652619750553}],"afters":[],"start":1652619750381,"stop":1652619750955}

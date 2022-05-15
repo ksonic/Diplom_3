@@ -1,0 +1,1 @@
+{"uuid":"d08951e8-a6f5-49ca-9347-cd0779f03089","name":"Check transition from to buns section","children":["b3a8bc58-8969-4325-abfd-c6b850a96e6c"],"befores":[{"name":"startUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1652619750989,"stop":1652619751117}],"afters":[],"start":1652619750988,"stop":1652619751528}
