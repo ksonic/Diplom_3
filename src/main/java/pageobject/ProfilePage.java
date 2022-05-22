@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 public class ProfilePage {
 
     //локатор "Конструктор"
-    @FindBy(xpath ="//p[text()='Конструктор']")
+    @FindBy(xpath = "//p[text()='Конструктор']")
     public static SelenideElement constructorLink;
 
     //локатор логотипа
-    @FindBy(xpath ="//div[@class='AppHeader_header__logo__2D0X2']")
+    @FindBy(xpath = "//div[@class='AppHeader_header__logo__2D0X2']")
     public static SelenideElement logo;
 
     //Локатор кнопки Выход
@@ -18,15 +18,15 @@ public class ProfilePage {
     public static SelenideElement logoutButton;
 
 
-    public static void constructorLinkClick(){
+    public void constructorLinkClick() {
         constructorLink.click();
     }
 
-    public static void logoClick(){
+    public void logoClick() {
         logo.click();
     }
 
-    public static void logoutButtonClick(){
+    public void logoutButtonClick() {
         logoutButton.click();
     }
 }

@@ -1,0 +1,80 @@
+{
+  "uid" : "88e20214d796fab",
+  "name" : "Check transition from main page to login form by account button",
+  "fullName" : "tests.LoginPageTest.accountLoginTest",
+  "historyId" : "b2d23c264d9f855ca2ee7734bcc758d8",
+  "time" : {
+    "start" : 1653259604091,
+    "stop" : 1653259609759,
+    "duration" : 5668
+  },
+  "description" : "Basic ui test for pages transition",
+  "descriptionHtml" : "<p>Basic ui test for pages transition</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "teartUp",
+    "time" : {
+      "start" : 1653259604092,
+      "stop" : 1653259608867,
+      "duration" : 4775
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:tests.LoginPageTest]/[method:accountLoginTest()]"
+  }, {
+    "name" : "host",
+    "value" : "Sonic.local"
+  }, {
+    "name" : "thread",
+    "value" : "50856@Sonic.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.LoginPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "accountLoginTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.LoginPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "88e20214d796fab.json",
+  "parameterValues" : [ ]
+}

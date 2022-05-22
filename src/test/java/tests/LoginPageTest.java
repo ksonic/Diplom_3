@@ -1,5 +1,6 @@
 package tests;
 
+import helper.MainPageBase;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,46 +11,51 @@ import pageobject.ResetPasswordPage;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.webdriver;
 import static com.codeborne.selenide.WebDriverConditions.url;
-import static helper.Helper.BASE_URL;
+import static helper.Paths.*;
 
-public class LoginPageTest{
+public class LoginPageTest extends MainPageBase {
+    MainPage mainPage;
+    RegistrationPage registrationPage;
+    ResetPasswordPage resetPasswordPage;
+
     @Test
     @DisplayName("Check transition from main page to login form")
     @Description("Basic ui test for pages transition")
     public void mainPageLoginTest() {
-        MainPage mainPage = open(BASE_URL,
-                        MainPage.class);
-       MainPage.mainPageLoginButtonClick();
-       webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/login"));
+        mainPage = open(BASE_URL,
+                MainPage.class);
+        mainPage.mainPageLoginButtonClick();
+        webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 
     @Test
     @DisplayName("Check transition from main page to login form by account button")
     @Description("Basic ui test for pages transition")
     public void accountLoginTest() {
-        MainPage mainPage =
+        mainPage =
                 open(BASE_URL, MainPage.class);
-        MainPage.accountLoginButtonClick();
-        webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/login"));
+        mainPage.accountLoginButtonClick();
+        webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 
     @Test
     @DisplayName("Check transition from registration page to login form")
     @Description("Basic ui test for pages transition")
     public void loginFromRegistrationPageTest() {
-        RegistrationPage registrationPage =
-                open(BASE_URL+"register",RegistrationPage.class);
-        RegistrationPage.loginFromRegistrationPageButtonClick();
-        webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/login"));
+        registrationPage =
+                open(REGISTRATION_PAGE_URL, RegistrationPage.class);
+        registrationPage.loginFromRegistrationPageButtonClick();
+        webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
+
     @Test
     @DisplayName("Check transition from reset password page to login form")
     @Description("Basic ui test for pages transition")
     public void loginFromResetPasswordPageTest() {
-        ResetPasswordPage resetPasswordPage =
-                open(BASE_URL+"forgot-password",ResetPasswordPage.class);
-        ResetPasswordPage.loginFromResetPasswordPageButtonClick();
-        webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/login"));
+        resetPasswordPage =
+                open(FORGOT_PASSWORD_PAGE_URL, ResetPasswordPage.class);
+        resetPasswordPage.loginFromResetPasswordPageButtonClick();
+        webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 
 }

@@ -1,0 +1,95 @@
+{
+  "uid" : "e73752fd71baaf80",
+  "name" : "Check registration with invalid credentials",
+  "fullName" : "tests.RegistrationPageTest.registrationWithInvalidCredentialsTest",
+  "historyId" : "76766463be5c46b05b57b53b782e85be",
+  "time" : {
+    "start" : 1653259563557,
+    "stop" : 1653259568626,
+    "duration" : 5069
+  },
+  "description" : "Basic ui test for registration",
+  "descriptionHtml" : "<p>Basic ui test for registration</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "teartUp",
+    "time" : {
+      "start" : 1653259563558,
+      "stop" : 1653259567783,
+      "duration" : 4225
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1653259568626,
+      "stop" : 1653259568626,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:tests.RegistrationPageTest]/[method:registrationWithInvalidCredentialsTest()]"
+  }, {
+    "name" : "host",
+    "value" : "Sonic.local"
+  }, {
+    "name" : "thread",
+    "value" : "50856@Sonic.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.RegistrationPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.RegistrationPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationWithInvalidCredentialsTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.RegistrationPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e73752fd71baaf80.json",
+  "parameterValues" : [ ]
+}

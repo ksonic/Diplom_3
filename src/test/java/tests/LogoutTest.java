@@ -1,51 +1,38 @@
 package tests;
 
-import helper.User;
-import helper.UserClient;
+import helper.RegistrationBase;
 import io.qameta.allure.Description;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pageobject.LoginPage;
-import pageobject.RegistrationPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.webdriver;
 import static com.codeborne.selenide.WebDriverConditions.url;
-import static helper.Helper.BASE_URL;
+import static helper.Credentials.getValidUserCredentials;
+import static helper.Paths.LOGIN_PAGE_URL;
 
-public class LogoutTest {
-    UserClient userClient=new UserClient();
-    User user;
+public class LogoutTest extends RegistrationBase {
+
     @BeforeEach
-    public void startUp() {
-        RegistrationPage registrationPagePage =
-                open("https://stellarburgers.nomoreparties.site/register",
-                        RegistrationPage.class);
-        user=new User("Софья", "sonic@gmail.com", "123456");
-        RegistrationPage.setRegistrationForm(this.user);
+    public void teartUp() {
+        super.teartUp();
+        this.user = getValidUserCredentials();
+        registrationPage.setRegistrationForm(this.user);
 
-        LoginPage loginPage =
-                open(BASE_URL+"login", LoginPage.class);
-        LoginPage.setLoginForm(this.user);
-        LoginPage.accountLoginButtonClick();
-    }
-    @AfterEach
-    public void tearDown() {
-        if (this.user == null){
-            return;
-        }
-        userClient.userDelete(this.user);
-        this.user = null;
+        loginPage =
+                open(LOGIN_PAGE_URL, LoginPage.class);
+        loginPage.setLoginForm(this.user);
+        loginPage.accountLoginButtonClick();
     }
 
     @Test
     @DisplayName("Check logout by Logout button from personal account page")
     @Description("Basic ui test for pages transition")
-    public void LogoutTest() {
-        LoginPage.logoutButtonClick();
-        webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/login"));
+    public void checkLogoutTest() {
+        loginPage.logoutButtonClick();
+        webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 
 }
