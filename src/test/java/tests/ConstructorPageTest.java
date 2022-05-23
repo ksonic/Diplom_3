@@ -28,7 +28,7 @@ public class ConstructorPageTest extends RegistrationBase {
                 open(LOGIN_PAGE_URL, LoginPage.class);
 
         loginPage.setLoginForm(this.user);
-        loginPage.accountLoginButtonClick();
+        loginPage.clickAccountLoginButton();
     }
 
 
@@ -36,7 +36,7 @@ public class ConstructorPageTest extends RegistrationBase {
     @DisplayName("Check transition from a personal account to constructor by Constructor button")
     @Description("Basic ui test for pages transition")
     public void constructorLinkTest() {
-        loginPage.constructorLinkClick();
+        loginPage.clickConstructorLink();
         webdriver().shouldHave(url(BASE_URL));
     }
 
@@ -44,7 +44,7 @@ public class ConstructorPageTest extends RegistrationBase {
     @DisplayName("Check transition from a personal account to constructor by logo")
     @Description("Basic ui test for pages transition")
     public void logoTest() {
-        loginPage.logoClick();
+        loginPage.clickLogo();
         webdriver().shouldHave(url(BASE_URL));
     }
 

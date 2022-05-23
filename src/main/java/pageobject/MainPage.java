@@ -39,32 +39,32 @@ public class MainPage {
     public static SelenideElement fillings;
 
     // метод клика по разделу Булки
-    public void bunsSectionClick() {
+    public void clickBunsSection() {
         bunsSection.click();
     }
 
     // метод клика по разделу Соусы
-    public static void saucesSectionClick() {
+    public static void clickSaucesSection() {
         saucesSection.click();
     }
 
     // метод клика по разделу Начинки
-    public void fillingsSectionClick() {
+    public void clickFillingsSection() {
         fillingsSection.click();
     }
 
     // метод проверки секции
-    public void sectionCheck(SelenideElement section) {
+    public void checkSection(SelenideElement section) {
         section.parent().shouldHave(cssClass("tab_tab_type_current__2BEPc"));
     }
 
     // Метод клика по кнопке Войти в аккаунт с главной страницы
-    public void mainPageLoginButtonClick() {
+    public void clickMainPageLoginButton() {
         mainPageLoginButton.click();
     }
 
     // Метод клика по кнопке Личный кабинет с главной страницы
-    public void accountLoginButtonClick() {
+    public void clickAccountLoginButton() {
         accountLoginButton.click();
     }
 

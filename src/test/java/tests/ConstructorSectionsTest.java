@@ -13,25 +13,25 @@ public class ConstructorSectionsTest extends MainPageBase {
     @DisplayName("Check transition from to sauces section")
     @Description("Basic ui test for pages transition")
     public void saucesTest() {
-        mainPage.saucesSectionClick();
-        mainPage.sectionCheck(saucesSection);
+        mainPage.clickSaucesSection();
+        mainPage.checkSection(saucesSection);
     }
 
     @Test
     @DisplayName("Check transition from to fillings section")
     @Description("Basic ui test for pages transition")
     public void fillingsTest() {
-        mainPage.fillingsSectionClick();
-        mainPage.sectionCheck(fillingsSection);
+        mainPage.clickFillingsSection();
+        mainPage.checkSection(fillingsSection);
     }
 
     @Test
     @DisplayName("Check transition from to buns section")
     @Description("Basic ui test for pages transition")
     public void bunsTest() {
-        mainPage.fillingsSectionClick();
-        mainPage.bunsSectionClick();
-        mainPage.sectionCheck(bunsSection);
+        mainPage.clickFillingsSection();
+        mainPage.clickBunsSection();
+        mainPage.checkSection(bunsSection);
     }
 
 }

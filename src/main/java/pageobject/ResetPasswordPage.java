@@ -8,7 +8,7 @@ public class ResetPasswordPage {
     @FindBy(xpath = "//a[text()='Войти']")
     public static SelenideElement loginFromResetPasswordPageButton;
 
-    public void loginFromResetPasswordPageButtonClick() {
+    public void clickLoginFromResetPasswordPageButton() {
         loginFromResetPasswordPageButton.click();
     }
 }

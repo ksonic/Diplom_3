@@ -42,7 +42,7 @@ public class RegistrationPage {
         registrationButton.click();
     }
 
-    public void loginFromRegistrationPageButtonClick() {
+    public void clickLoginFromRegistrationPageButton() {
         loginFromRegistrationPageButton.click();
     }
 }

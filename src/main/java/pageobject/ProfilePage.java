@@ -18,15 +18,15 @@ public class ProfilePage {
     public static SelenideElement logoutButton;
 
 
-    public void constructorLinkClick() {
+    public void clickConstructorLink() {
         constructorLink.click();
     }
 
-    public void logoClick() {
+    public void clickLogo() {
         logo.click();
     }
 
-    public void logoutButtonClick() {
+    public void clickLogoutButton() {
         logoutButton.click();
     }
 }

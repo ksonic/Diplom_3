@@ -32,7 +32,7 @@ public class LoginPage extends ProfilePage {
         loginButton.click();
     }
 
-    public void accountLoginButtonClick() {
+    public void clickAccountLoginButton() {
         accountLoginButton.click();
     }
 

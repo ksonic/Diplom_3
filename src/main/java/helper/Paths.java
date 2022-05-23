@@ -4,6 +4,7 @@ package helper;
 public class Paths {
     public static final String BASE_URL = "https://stellarburgers.nomoreparties.site/";
     public static final String USER_PATH = "api/auth";
+    public static final String YANDEXDRIVER_PATH ="src/main/resources/yandexdriver";
 
     public static final String REGISTRATION_PAGE_URL = BASE_URL + "register";
     public static final String LOGIN_PAGE_URL = BASE_URL + "login";

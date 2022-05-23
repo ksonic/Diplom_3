@@ -24,7 +24,7 @@ public class LoginPageTest extends MainPageBase {
     public void mainPageLoginTest() {
         mainPage = open(BASE_URL,
                 MainPage.class);
-        mainPage.mainPageLoginButtonClick();
+        mainPage.clickMainPageLoginButton();
         webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 
@@ -34,7 +34,7 @@ public class LoginPageTest extends MainPageBase {
     public void accountLoginTest() {
         mainPage =
                 open(BASE_URL, MainPage.class);
-        mainPage.accountLoginButtonClick();
+        mainPage.clickAccountLoginButton();
         webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 
@@ -44,7 +44,7 @@ public class LoginPageTest extends MainPageBase {
     public void loginFromRegistrationPageTest() {
         registrationPage =
                 open(REGISTRATION_PAGE_URL, RegistrationPage.class);
-        registrationPage.loginFromRegistrationPageButtonClick();
+        registrationPage.clickLoginFromRegistrationPageButton();
         webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 
@@ -54,7 +54,7 @@ public class LoginPageTest extends MainPageBase {
     public void loginFromResetPasswordPageTest() {
         resetPasswordPage =
                 open(FORGOT_PASSWORD_PAGE_URL, ResetPasswordPage.class);
-        resetPasswordPage.loginFromResetPasswordPageButtonClick();
+        resetPasswordPage.clickLoginFromResetPasswordPageButton();
         webdriver().shouldHave(url(LOGIN_PAGE_URL));
     }
 

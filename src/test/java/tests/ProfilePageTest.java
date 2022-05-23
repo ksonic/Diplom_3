@@ -26,7 +26,7 @@ public class ProfilePageTest extends RegistrationBase {
         loginPage =
                 open(LOGIN_PAGE_URL, LoginPage.class);
         loginPage.setLoginForm(this.user);
-        loginPage.accountLoginButtonClick();
+        loginPage.clickAccountLoginButton();
         webdriver().shouldHave(url(PROFILE_PAGE_URL));
 
     }
