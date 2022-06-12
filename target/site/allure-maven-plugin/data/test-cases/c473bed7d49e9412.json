@@ -1,0 +1,80 @@
+{
+  "uid" : "c473bed7d49e9412",
+  "name" : "Check transition from to fillings section",
+  "fullName" : "tests.ConstructorSectionsTest.fillingsTest",
+  "historyId" : "be244f309f7d089a5520e89442fa52ea",
+  "time" : {
+    "start" : 1653259627606,
+    "stop" : 1653259634961,
+    "duration" : 7355
+  },
+  "description" : "Basic ui test for pages transition",
+  "descriptionHtml" : "<p>Basic ui test for pages transition</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "teartUp",
+    "time" : {
+      "start" : 1653259627607,
+      "stop" : 1653259633896,
+      "duration" : 6289
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:tests.ConstructorSectionsTest]/[method:fillingsTest()]"
+  }, {
+    "name" : "host",
+    "value" : "Sonic.local"
+  }, {
+    "name" : "thread",
+    "value" : "50856@Sonic.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.ConstructorSectionsTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ConstructorSectionsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "fillingsTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.ConstructorSectionsTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c473bed7d49e9412.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,95 @@
+{
+  "uid" : "f00a00746afbd696",
+  "name" : "Check transition from a personal account to constructor by logo",
+  "fullName" : "tests.ConstructorPageTest.logoTest",
+  "historyId" : "a414864109f30d238c084047ecd72d01",
+  "time" : {
+    "start" : 1653259582732,
+    "stop" : 1653259591884,
+    "duration" : 9152
+  },
+  "description" : "Basic ui test for pages transition",
+  "descriptionHtml" : "<p>Basic ui test for pages transition</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "teartUp",
+    "time" : {
+      "start" : 1653259582733,
+      "stop" : 1653259590665,
+      "duration" : 7932
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1653259591122,
+      "stop" : 1653259591884,
+      "duration" : 762
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:tests.ConstructorPageTest]/[method:logoTest()]"
+  }, {
+    "name" : "host",
+    "value" : "Sonic.local"
+  }, {
+    "name" : "thread",
+    "value" : "50856@Sonic.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.ConstructorPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ConstructorPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "logoTest"
+  }, {
+    "name" : "suite",
+    "value" : "tests.ConstructorPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f00a00746afbd696.json",
+  "parameterValues" : [ ]
+}
